@@ -22,6 +22,7 @@ def predict():
     # Convert features to array
     array_features = [np.array(features)]
     # Predict features
+    # model=None
     prediction = model.predict(array_features)
     
     output = prediction
@@ -36,4 +37,4 @@ def predict():
 
 if __name__ == '__main__':
 #Run the application
-    app.run()
+    app.run('0.0.0.0')
